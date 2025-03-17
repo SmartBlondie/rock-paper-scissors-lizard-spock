@@ -5,4 +5,8 @@ import svgLoader from "vite-svg-loader";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue(), svgLoader()],
+  base: '/rock-paper-scissors-lizard-spock/',
+  build: {
+    outDir: 'dist'
+  }
 })
